@@ -39,7 +39,7 @@
     "ng-file-upload": "11.0.0",
     "ngImgCropFullExtended": "0.5.4",
     "ngDraggable": "0.1.10",
-    "socket.io-client": "^1.5.0"
+    "socket.io-client": "^1.5.1"
   },
   "resolutions": {
     "angular": "~1.5.0",

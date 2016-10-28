@@ -187,18 +187,29 @@
 	<div id="page">
     <%if(locals.user.theme.includes('.jpg')){%>
         <style type="text/css">
-          body, #sb-wrapper,.sidebar-item{
+          html, body, #sb-wrapper,.sidebar-item{
             background: url(<%=locals.user.theme %>);
           }
-          
+        div#profile-details{
+          border:1px solid #286090;
+          background-color:transparent;
+        }
+        .profile-overview h1, #menu-toggle .fa, .fa-cog{color: #000 !important;}
         </style>
-      <% }else{%>
+      <% }else{
+          if(locals.user.theme != "#ffffff"){
+        %>
         <style type="text/css">
-          body, #sb-wrapper,.sidebar-item{
+          html, body, #sb-wrapper,.sidebar-item{
             background: <%=locals.user.theme %>;
-          }          
+          }
+          div#profile-details{
+            border:1px solid #286090;
+            background-color:transparent;
+          }
+        .profile-overview h1, #menu-toggle .fa, .fa-cog{color: #000 !important;}
         </style>
-      <% } %> 
+      <% }} %>
 
 		<!-- Sidebar -->
 		<div id="sb-wrapper"><h1>Mobile Portal</h1>

@@ -57,8 +57,16 @@ angular.module('positions')
 	});
 
     $scope.saveColor = function() {
-        console.log('save color'+$scope.user.bodyBGColor);
-        $("body, #sb-wrapper, .sidebar-item").css("background-color", $scope.user.bodyBGColor);
+        $("html, body, #sb-wrapper, .sidebar-item").css("background", $scope.user.bodyBGColor);
+        if($scope.user.bodyBGColor != '#ffffff'){
+            $("div#profile-details").css({"border":"1px solid #286090", "background":"none"});
+            $(".profile-overview h1, .fa-cog").css("color","#000");
+            $("#menu-toggle .fa-bars").css("color", "#000");
+        }else{
+            $("div#profile-details").css({"border":"none", "background":"#4d4dff"});
+            $(".profile-overview h1, .fa-cog").css("color","#fff");
+            $("#menu-toggle .fa-bars").css("color", "#fff");
+        }
         $scope.user.theme= $scope.user.bodyBGColor;
         $http.put('/api/v1/secure/admin/users/' + $rootScope.user._id, $scope.user).success(function(response) {
           console.log('updaing save color');
@@ -66,8 +74,21 @@ angular.module('positions')
     }
 
     $scope.saveBgImage = function() {
-        console.log('save color'+$scope.user.bodyBGImg);
-        $("body, #sb-wrapper, .sidebar-item").css("background-image", "url("+$scope.user.bodyBGImg+")");
+        $("html, body, #sb-wrapper, .sidebar-item").css("background-image", "url("+$scope.user.bodyBGImg+")");
+        /*$("div#profile-details").css({"border":"1px solid #286090", "background":"none"});
+        $(".profile-overview h1").css("color","#000");
+        $("#menu-toggle .fa-bars").css("color", "#000");*/
+
+        if($scope.user.bodyBGImg != '#ffffff'){
+            $("div#profile-details").css({"border":"1px solid #286090", "background":"none"});
+            $(".profile-overview h1, .fa-cog").css("color","#000");
+            $("#menu-toggle .fa-bars").css("color", "#000");
+        }else{
+            $("div#profile-details").css({"border":"none", "background":"#4d4dff"});
+            $(".profile-overview h1").css("color","#fff");
+            $("#menu-toggle .fa-bars").css("color", "#fff");
+        }
+
         $scope.user.theme= $scope.user.bodyBGImg;
         $http.put('/api/v1/secure/admin/users/' + $rootScope.user._id, $scope.user).success(function(response) {
           console.log('updaing save color');
