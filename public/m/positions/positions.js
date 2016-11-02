@@ -77,10 +77,22 @@ angular.module('positions', ['ngRoute','ngMaterial','angular-growl', 'ngFileUplo
     })
   
    .when('/chart', {
+        templateUrl:'/public/m/chart/lineChart.html'
+    })
+  
+   .when('/chart/barChart', {
         templateUrl:'/public/m/chart/barChart.html'
     })
   
-   .when('/changeTheme', {
+   .when('/chart/doughnutChart', {
+        templateUrl:'/public/m/chart/doughnut.html'
+    })
+  
+   .when('/chart/pieChart', {
+        templateUrl:'/public/m/chart/pieChart.html'
+    })
+  
+    .when('/changeTheme', {
         templateUrl: '/public/m/positions/changeTheme.html',
         controller: 'positionsCtrl'
     })

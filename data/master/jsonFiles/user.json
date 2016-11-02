@@ -65,121 +65,121 @@
 
         "_id"                                                                                                                      : ObjectId("A20474567892345678900022"),
 
-        "token"                               :
-                        {
-                                        "token"                                                                : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NjQyNDgyNzI1NDV9.pB1IYfThsxguiJTuV8si8I75mmQtuMtpNGMpNIWc36s",
-                                        "dateCreated"                  : { "$date" : "2016-10-25T09:00:00.000Z"}
-                        },
+"token"                               :
+{
+"token"                                                                : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NjQyNDgyNzI1NDV9.pB1IYfThsxguiJTuV8si8I75mmQtuMtpNGMpNIWc36s",
+"dateCreated"                  : { "$date" : "2016-10-25T09:00:00.000Z"}
+},
 
-        "name":
-                        {
-                                        "prefix"                :  "Mr.",
-                                        "first"                    :  "Monica",
-                                        "middle"              :  "aa",
-                                        "last"                     :  "Levis",
-                                        "suffix"                 :  ""
-                        },
+"name":
+{
+"prefix"                :  "Mr.",
+"first"                    :  "Monica",
+"middle"              :  "aa",
+"last"                     :  "Levis",
+"suffix"                 :  ""
+},
 
-        "__v"                                                    :               0,
-        "email"                                                 : "monica@appxl.com",
+"__v"                                                    :               0,
+"email"                                                 : "monica@appxl.com",
 
-        "avatar"                                               :  "/public/assets/g/imgs/avatar.jpg",
+"avatar"                                               :  "/public/assets/g/imgs/avatar.jpg",
 
-        "local"                                                   :
-                        {
-                                        "password"                        : "$2a$08$hahH9uqzbcv3iCtKQYhoUOIBrfrQZyhKyo93jJoZ1HDlCt4WmAE9q",
-                                        "email"                                                 : "monica@appxl.com"
-                        },
+"local"                                                   :
+{
+"password"                        : "$2a$08$hahH9uqzbcv3iCtKQYhoUOIBrfrQZyhKyo93jJoZ1HDlCt4WmAE9q",
+"email"                                                 : "monica@appxl.com"
+},
 
-        "socialProfile"    :
-                        [
-                                        {
-                                                        "handle"                              : "https://www.facebook.com",
-                                                        "network"                           : "facebook"
-                                        },
+"socialProfile"    :
+[
+{
+"handle"                              : "https://www.facebook.com",
+"network"                           : "facebook"
+},
 
-                                        {
-                                                        "handle"                              : "https://csc.myperks.in/myperks/aboutuser/view?user.id=652752",
-                                                        "network"                           : "CSC My Perks"
-                                        }
-                        ],
+{
+"handle"                              : "https://csc.myperks.in/myperks/aboutuser/view?user.id=652752",
+"network"                           : "CSC My Perks"
+}
+],
 
-        "stats"                                                  :
-                        {
-                                        "dateLastLogin" : { "$date" : "2016-12-25T09:00:00.000Z"},
-                                        "dateCreated"                  : { "$date" : "2016-12-20T09:00:00.000Z"}
-                        },
+"stats"                                                  :
+{
+"dateLastLogin" : { "$date" : "2016-12-25T09:00:00.000Z"},
+"dateCreated"                  : { "$date" : "2016-12-20T09:00:00.000Z"}
+},
 
-        "contactNo"                                       :
-                        [
-                                        {
-                                                        "contactnumber"                             : "864-643-0563",
-                                                        "contacttype"                                    : "mobile"
-                                        }
-                        ],
+"contactNo"                                       :
+[
+{
+"contactnumber"                             : "864-643-0563",
+"contacttype"                                    : "mobile"
+}
+],
 
-        "memberOf"                                     : ["A20484567892345678900001"],
-        "theme"                                                              : "white"
+"memberOf"                                     : ["A20484567892345678900001"],
+"theme"                                                              : "white"
 },
 {
 
-        "_id"                                                                                                                      : ObjectId("A20474567892345678900023"),
+"_id"                                                                                                                      : ObjectId("A20474567892345678900023"),
 
-        "token"                               :
-                        {
-                                        "token"                                                                : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NjQyNDgyNzI1NDV9.pB1IYfThsxguiJTuV8si8I75mmQtuMtpNGMpNIWc36s",
-                                        "dateCreated"                  : { "$date" : "2016-10-25T09:00:00.000Z"}
-                        },
+"token"                               :
+{
+"token"                                                                : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NjQyNDgyNzI1NDV9.pB1IYfThsxguiJTuV8si8I75mmQtuMtpNGMpNIWc36s",
+"dateCreated"                  : { "$date" : "2016-10-25T09:00:00.000Z"}
+},
 
-        "name":
-                        {
-                                        "prefix"                :  "Mr.",
-                                        "first"                    :  "Neil",
-                                        "middle"              :  "NN",
-                                        "last"                     :  "Fasen",
-                                        "suffix"                 :  ""
-                        },
+"name":
+{
+"prefix"                :  "Mr.",
+"first"                    :  "Neil",
+"middle"              :  "NN",
+"last"                     :  "Fasen",
+"suffix"                 :  ""
+},
 
-        "__v"                                                    :               0,
-        "email"                                                 : "neil@appxl.com",
+"__v"                                                    :               0,
+"email"                                                 : "neil@appxl.com",
 
-        "avatar"                                               :  "/public/assets/g/imgs/avatar.jpg",
+"avatar"                                               :  "/public/assets/g/imgs/avatar.jpg",
 
-        "local"                                                   :
-                        {
-                                        "password"                        : "$2a$08$hahH9uqzbcv3iCtKQYhoUOIBrfrQZyhKyo93jJoZ1HDlCt4WmAE9q",
-                                        "email"                                                 : "neil@appxl.com"
-                        },
+"local"                                                   :
+{
+"password"                        : "$2a$08$hahH9uqzbcv3iCtKQYhoUOIBrfrQZyhKyo93jJoZ1HDlCt4WmAE9q",
+"email"                                                 : "neil@appxl.com"
+},
 
-        "socialProfile"    :
-                        [
-                                        {
-                                                        "handle"                              : "https://www.facebook.com",
-                                                        "network"                           : "facebook"
-                                        },
+"socialProfile"    :
+[
+{
+"handle"                              : "https://www.facebook.com",
+"network"                           : "facebook"
+},
 
-                                        {
-                                                        "handle"                              : "https://csc.myperks.in/myperks/aboutuser/view?user.id=652752",
-                                                        "network"                           : "CSC My Perks"
-                                        }
-                        ],
+{
+"handle"                              : "https://csc.myperks.in/myperks/aboutuser/view?user.id=652752",
+"network"                           : "CSC My Perks"
+}
+],
 
-        "stats"                                                  :
-                        {
-                                        "dateLastLogin" : { "$date" : "2016-12-25T09:00:00.000Z"},
-                                        "dateCreated"                  : { "$date" : "2016-12-20T09:00:00.000Z"}
-                        },
+"stats"                                                  :
+{
+"dateLastLogin" : { "$date" : "2016-12-25T09:00:00.000Z"},
+"dateCreated"                  : { "$date" : "2016-12-20T09:00:00.000Z"}
+},
 
-        "contactNo"                                       :
-                        [
-                                        {
-                                                        "contactnumber"                             : "864-643-0563",
-                                                        "contacttype"                                    : "mobile"
-                                        }
-                        ],
+"contactNo"                                       :
+[
+{
+"contactnumber"                             : "864-643-0563",
+"contacttype"                                    : "mobile"
+}
+],
 
-        "memberOf"                                     : ["A20484567892345678900001"],
-        "theme"                                     : "white"
+"memberOf"                                     : ["A20484567892345678900001"],
+"theme"                                     : "white"
 }
 
 
