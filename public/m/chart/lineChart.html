@@ -1,0 +1,36 @@
+<style>
+    .container {
+      width: 80%;
+      margin: 15px auto;
+    }
+</style>
+
+<div id="profile-details" header showprofile="false" icon="fa fa-plane" title1="Line Chart" query='query' ></div>
+<div>
+    <div ng-include src="'/public/m/chart/chartTypes.html'"></div>
+</div>
+<div class="container">
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+</div>
+
+<script>    
+   var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Prof 1', 'Prof 2', 'Sr Prof', 'Assoc. Mgr'],
+        datasets: [{
+          label: 'Positions',
+          data: [12, 19, 3, 17],
+          backgroundColor: "rgba(153,255,51,0.6)"
+        }, {
+          label: 'Candidates',
+          data: [2, 29, 5, 5],
+          backgroundColor: "rgba(255,153,0,0.6)"
+        }]
+      }
+    });
+
+</script>
