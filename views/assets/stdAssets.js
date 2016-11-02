@@ -250,6 +250,17 @@ module.exports = {
 			"prod":[
 			]
 		},
+        
+        "angular-chart": {
+			"cdn": [
+			],
+			"dev":[
+			 "/public/libs/chart.js/dist/Chart.min.js"               
+			],
+			"prod":[
+             "/public/libs/chart.js/dist/Chart.min.js"
+			]
+		},
 
 		"angular-draggable":{
 			"cdn":[],

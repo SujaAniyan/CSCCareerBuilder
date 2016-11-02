@@ -1,116 +1,37 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>D3 Example</title>
-    
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-    <style>
-    
-      .axis text {
-        font: 16pt sans-serif;
-        font-family: 'Poiret One', cursive;
+<style>
+    container {
+      width: 70%;
+        height:30px;
+      margin: 15px auto;
+    }
+</style>
+
+<div id="profile-details" header showprofile="false" icon="fa fa-plane" title1="Bar Chart" query='query' ></div>
+<div>
+    <div ng-include src="'/public/m/chart/chartTypes.html'"></div>
+</div>
+
+<div class="container">
+  <div>
+    <canvas id="barChart"></canvas>
+  </div>
+</div>
+
+<script>
+    var ctx = document.getElementById("barChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Prof 1', 'Prof 2', 'Sr Prof', 'Assoc. Mgr'],
+        datasets: [{
+          label: 'Positions',
+          data: [67, 19, 30, 17],
+          backgroundColor: "rgba(153,255,51,1)"
+        }, {
+          label: 'Candidates',
+          data: [37, 32, 30, 15],
+          backgroundColor: "rgba(255,153,0,1)"
+        }]
       }
-
-      .axis path,
-      .axis line {
-        fill: none;
-        stroke: #000;
-        shape-rendering: crispEdges;
-      }
-
-    </style>
-  </head>
-  <body>
-      herererererer
-    <script>
-
-      var outerWidth = 500;
-      var outerHeight = 250;
-      var margin = { left: 90, top: 30, right: 30, bottom: 30 };
-      var barPadding = 0.2;
-
-      var xColumn = "name";
-      var yColumn = "population";
-
-      var innerWidth  = outerWidth  - margin.left - margin.right;
-      var innerHeight = outerHeight - margin.top  - margin.bottom;
-
-      var svg = d3.select("body").append("svg")
-        .attr("width",  outerWidth)
-        .attr("height", outerHeight);
-      var g = svg.append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-      var xAxisG = g.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + innerHeight + ")");
-      var yAxisG = g.append("g")
-        .attr("class", "y axis");
-
-      var xScale = d3.scale.ordinal().rangeBands([0, innerWidth], barPadding);
-      var yScale = d3.scale.linear().range([innerHeight, 0]);
-
-      var xAxis = d3.svg.axis().scale(xScale).orient("bottom")
-        .outerTickSize(0);          // Turn off the marks at the end of the axis.
-      var yAxis = d3.svg.axis().scale(yScale).orient("left")
-        .ticks(5)                   // Use approximately 5 ticks marks.
-        .tickFormat(d3.format("s")) // Use intelligent abbreviations, e.g. 5M for 5 Million
-        .outerTickSize(0);          // Turn off the marks at the end of the axis.
-        
-        
-     var myArrayOfObjects = [
-        { x: 100, y: 100},
-        { x: 130, y: 120},
-        { x: 80 , y: 180},
-        { x: 180, y: 80 },
-        { x: 180, y: 40 }
-      ];
-
-      myArrayOfObjects.forEach(function (d){
-        console.log(d.x + ", " + d.y);
-      });
-
-      function render(data){
-
-        /*Scale.domain(       data.map( function (d){ return d[xColumn]; }));
-        yScale.domain([0, d3.max(data, function (d){ return d[yColumn]; })]);
-
-        xAxisG.call(xAxis);
-        yAxisG.call(yAxis);
-
-        var bars = g.selectAll("rect").data(data);
-        bars.enter().append("rect")
-          .attr("width", xScale.rangeBand());
-        bars
-          .attr("x",      function (d){ return               xScale(d[xColumn]); })
-          .attr("y",      function (d){ return               yScale(d[yColumn]); })
-          .attr("height", function (d){ return innerHeight - yScale(d[yColumn]); });
-        bars.exit().remove();*/
-          
-     var myArrayOfObjects = [
-        { x: 100, y: 100},
-        { x: 130, y: 120},
-        { x: 80 , y: 180},
-        { x: 180, y: 80 },
-        { x: 180, y: 40 }
-      ];
-
-      myArrayOfObjects.forEach(function (d){
-        console.log(d.x + ", " + d.y);
-      });
-          
-      }
-
-      /*function type(d){
-        d.population = +d.population;
-        return d;
-      }*/
-
-      /*d3.csv("geonames_cities_top3.csv", type, render);*/
-        
-        
-
-    </script>
-  </body>
-</html>
+    });
+</script>

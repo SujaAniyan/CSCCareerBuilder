@@ -33,7 +33,7 @@ module.exports = {
         {
 			name: "Charts",
 			link: "/m/positions/#/chart",
-			icon: "fa-chart",
+			icon: "fa-bar-chart",
 			roles: "admin,emp"
 		},
 		{

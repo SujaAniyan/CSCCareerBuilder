@@ -1,0 +1,39 @@
+<style>
+    .container {
+      width: 80%;
+      margin: 15px auto;
+    }
+</style>
+
+<div id="profile-details" header showprofile="false" icon="fa fa-plane" title1="Pie Chart" query='query' ></div>
+<div>
+    <div ng-include src="'/public/m/chart/chartTypes.html'"></div>
+</div>
+
+<div class="container">
+  <div>
+    <canvas id="pie"></canvas>
+  </div>
+</div>
+
+<script>
+  var ctx = document.getElementById("pie").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ["M", "T", "W", "T", "F", "S", "S"],
+        datasets: [{
+          backgroundColor: [
+            "#2ecc71",
+            "#3498db",
+            "#95a5a6",
+            "#9b59b6",
+            "#f1c40f",
+            "#e74c3c",
+            "#34495e"
+          ],
+          data: [12, 19, 3, 17, 28, 24, 7]
+        }]
+      }
+    });
+</script>

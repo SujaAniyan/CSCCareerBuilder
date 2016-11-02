@@ -16,6 +16,7 @@
     "bson": "^0.5.5",
     "bunyan": "^1.8.1",
     "bunyan-format": "^0.2.1",
+    "chart.js": "^2.3.0",
     "colors": "1.1.2",
     "connect-flash": "~0.1.1",
     "convict": "1.0.2",

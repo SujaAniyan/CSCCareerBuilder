@@ -47,6 +47,7 @@ usersApp.controller('usersControllerMain', ['$scope', '$http', '$routeParams','$
 
     //adding new user into the user model
     $scope.addUser = function() {
+    $scope.user.theme = "/public/uploads/theme1.jpg";
       $http.post(userApiEndPoint, $scope.user).success(function(response) {
         refresh();
         $scope.action = "none";
